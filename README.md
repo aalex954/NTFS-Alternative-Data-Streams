@@ -28,6 +28,9 @@ This vulnerability becomes very severe when compounded by the problem of exclusi
 
 Modern AV and EDR will still scan ADS if present, but ADS may still present a challenge to users or investigators.
 
+![Inked5](https://github.com/aalex954/NTFS-Alternitive-Data-Streams/assets/6628565/f7034479-4590-482e-bd6e-f78973b5dced)
+
+
  ---
 
 ### Hashing
@@ -35,6 +38,9 @@ Modern AV and EDR will still scan ADS if present, but ADS may still present a ch
 Hashing applications may not consider ADS when computing a hash of a file leading to a potential false trust.
 Some file integrity programs do not take the alternate data stream into account when making their calculations. 
 This means that while they do protect the integrity of the contents of the primary, unnamed stream, they do not protect the integrity of alternate data streams.
+
+![md5](https://github.com/aalex954/NTFS-Alternitive-Data-Streams/assets/6628565/899abe45-c2a5-4b10-b065-a2111155efa5)
+
 
 ---
 
@@ -129,15 +135,15 @@ Echo some text into a new text file
 echo "super NOT secret text" > ".\super_sneaky_hidden_image.txt"
 ```
 
-![3](https://github.com/aalex954/ADS-Example/assets/6628565/a90d4938-382f-4a78-9458-e3b1a67e939b)
-
----
-
 Create a new stream and set its text contents
 
 ```powershell
 Set-Content "super_sneaky_hidden_image.txt" -Stream SECRET
 ```
+
+![3](https://github.com/aalex954/ADS-Example/assets/6628565/a90d4938-382f-4a78-9458-e3b1a67e939b)
+
+---
 
 Get the original data ("$DATA")
 
