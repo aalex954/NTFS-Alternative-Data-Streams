@@ -141,7 +141,7 @@ Create a new stream and set its text contents
 Set-Content "super_sneaky_hidden_image.txt" -Stream SECRET
 ```
 
-![3](https://github.com/aalex954/ADS-Example/assets/6628565/a90d4938-382f-4a78-9458-e3b1a67e939b)
+![Inked3](https://github.com/aalex954/NTFS-Alternitive-Data-Streams/assets/6628565/0aef95e2-c2c7-4eb5-acdd-e8192788357d)
 
 ---
 
@@ -157,7 +157,7 @@ Get the new stream ("SECRET")
 Get-Content "super_sneaky_hidden_image.txt" -Stream SECRET
 ```
 
-![4](https://github.com/aalex954/ADS-Example/assets/6628565/bca55cab-244f-4528-9a67-306c4fc705b6)
+![Inked4](https://github.com/aalex954/NTFS-Alternitive-Data-Streams/assets/6628565/dd5f926b-ddfb-4f5e-a828-5270f4d3288a)
 
 ---
 
@@ -174,7 +174,7 @@ Put calc.exe into a new stream called "a_calculator"
 Set-Content -path ".\super_sneaky_hidden_image.txt" -value $(Get-Content $(Get-Command calc.exe).Path -readcount 0 -encoding byte) -encoding byte -stream a_calculator
 ```
 
-![5](https://github.com/aalex954/ADS-Example/assets/6628565/2971a4c1-82b9-40f2-8c6f-301db2431540)
+![Inked5](https://github.com/aalex954/NTFS-Alternitive-Data-Streams/assets/6628565/edbb83df-43c7-4949-a3ed-69f2d477c93c)
 
 ### Call an executable from a specified stream
 
@@ -184,7 +184,6 @@ Create and call a process from the stream "a_calculator"
 wmic process call create $(Resolve-Path .\super_sneaky_hidden_image.txt:a_calculator)
 ```
 
-
-![6](https://github.com/aalex954/ADS-Example/assets/6628565/8d78bea2-302d-4824-98cc-272856d913c9)
+![Inked6](https://github.com/aalex954/NTFS-Alternitive-Data-Streams/assets/6628565/6ecfa4bf-03c7-4d49-8aac-c9c3ac0e4eed)
 
 
