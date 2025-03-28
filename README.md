@@ -1,6 +1,6 @@
 # NTFS Alternative Data Streams
 
-![yo_dawg](https://github.com/aalex954/ADS-Example/assets/6628565/47a7a6e5-cb3c-42fc-972e-bfe12e6bed58)
+![yo_dawg](https://github.com/user-attachments/assets/cc23a189-08a2-4af9-b544-a2ac52f9331e)
 
 ## Background
 
